@@ -1,0 +1,55 @@
+@import url('./app.css');
+@import url('./header.css');
+@import url('./main.css');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 100%;
+}
+
+@media screen and (max-width: 1024px) { 
+	html {
+	   	font-size: 93.75%;
+	}
+}
+
+@media screen and (max-width: 768px) { 
+	html {
+		font-size: 87.5%;
+	}
+}
+
+:root {
+	--clr-verde: #658E76;
+	--clr-branco: #F9F9F9;
+}
+
+body {
+	font-size: 1rem;
+	font-weight: 500;
+	font-family: 'Poppins', sans-serif;
+}
+
+a {
+ 	color: inherit;
+  	text-decoration: none;
+}
+
+a:hover {
+ 	cursor: pointer;
+ 	opacity: 0.9;
+}
+
+button {
+  	border: 0;
+}
+
+button:hover {
+  	cursor: pointer;
+  	opacity: 0.9;
+}

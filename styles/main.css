@@ -1,0 +1,160 @@
+.about {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.movie {
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+}
+
+.movie div {
+	width: 440px;
+}
+
+.co-founder {
+	font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 1.875rem;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	margin-bottom: 1rem;
+
+	color: var(--clr-branco);
+}
+
+.title {
+	font-weight: 900;
+	font-size: 4.25rem;
+	line-height: 4.5rem;
+	text-transform: uppercase;
+
+	color: var(--clr-branco);
+}
+
+.synopsis {
+	font-weight: 400;
+	font-size: 1.05rem;
+	line-height: 1.813rem;
+
+	color: var(--clr-branco);
+}
+
+.btn-container {
+	display: flex;
+	gap: 1.875rem;
+
+	margin-top: 1.75rem;
+}
+
+.btn {
+	width: 225px;
+	height: 45px;
+
+	font-weight: 500;
+	font-size: 1rem;
+	line-height: 1.75rem;
+	text-transform: uppercase;
+
+	transform: skew(-30deg);
+
+	color: var(--clr-branco);
+}
+
+.btn-play {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1.25rem;
+
+	border: 0.125rem solid var(--clr-verde);
+	background-color: var(--clr-verde);
+}
+
+.btn-trailler {
+	border: 0.125rem solid var(--clr-verde);
+	background-color: transparent;
+}
+
+.btn-play span,
+.btn-play img,
+.btn-trailler span {
+	display: inherit;
+  	transform: skew(30deg);
+}
+
+.btn-play:hover {
+	border: 0.125rem solid var(--clr-verde);
+	background-color: transparent;
+}
+
+.btn-trailler:hover {
+	border: 0.125rem solid var(--clr-verde);
+	background-color: var(--clr-verde);
+}
+
+.illustration {
+	width: 500px;
+
+	/* Floating Animation */
+	animation-name: floating;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+	0% {
+		transform: translate(0, 0px);
+	}
+
+	50% {
+		transform: translate(0, 20px);
+	}
+
+	100% {
+		transform: translate(0, 0px);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.about {
+		justify-content: center;
+		flex-direction: column-reverse;
+	}
+
+	.movie div {
+		width: 327px;
+		margin-bottom: 0.75rem;
+	}
+
+	.co-founder {
+		font-size: 1.125rem;
+		line-height: 1.688rem;
+	}
+
+	.title {
+		font-size: 3.7rem;
+		line-height: 3.9rem;
+	}
+
+	.synopsis {
+		line-height: 1.563rem;
+	}
+
+	.movie nav {
+		gap: 1.25rem;
+		margin-top: 1rem;
+	}
+
+	.btn-trailler {
+		display: none;
+	}
+
+	.illustration {
+		width: 330px
+	}
+}	
